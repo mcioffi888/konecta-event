@@ -314,7 +314,14 @@
     <div id="registration-form">
       <div class="form-title">Registrazione</div>
 
-      <form id="eventForm" onsubmit="handleSubmit(event)">
+      <form id="eventForm" action="https://formsubmit.co/marco@neuram.ai" method="POST">
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="🏆 Nuova Registrazione - Evento Zambrotta">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="https://mcioffi888.github.io/konecta-event/grazie.html">
+        <input type="text" name="_honey" style="display:none">
+
         <div class="form-row">
           <div class="form-group">
             <label>Nome <span class="required">*</span></label>
@@ -412,24 +419,7 @@
   </div>
 
   <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      const form = document.getElementById('eventForm');
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
-      data.marketing = document.getElementById('marketing').checked;
-      data.timestamp = new Date().toISOString();
-      
-      // Log to console (replace with actual backend endpoint)
-      console.log('Registration:', JSON.stringify(data, null, 2));
-      
-      // Show success message
-      document.getElementById('registration-form').style.display = 'none';
-      document.getElementById('successMessage').style.display = 'block';
-      
-      // Optional: Send to Google Sheets via Apps Script or Formspree
-      // fetch('https://YOUR-ENDPOINT', { method: 'POST', body: JSON.stringify(data) });
-    }
+    // Form is handled by FormSubmit.co - submissions go to marco@neuram.ai
   </script>
 </body>
 </html>

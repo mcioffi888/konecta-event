@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registrazione Confermata — Konecta</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(170deg, #0a0a0a 0%, #1a1a2e 40%, #16213e 70%, #0f3460 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gold-line {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #c9a84c, #f0d68a, #c9a84c);
+  }
+  .container {
+    max-width: 600px;
+    text-align: center;
+    padding: 60px 30px;
+  }
+  .brand {
+    font-size: 18px; font-weight: 300;
+    letter-spacing: 10px; color: #c9a84c;
+    text-transform: uppercase; margin-bottom: 50px;
+  }
+  .check { font-size: 80px; margin-bottom: 30px; }
+  h1 {
+    font-size: 36px; font-weight: 700;
+    background: linear-gradient(180deg, #ffffff 0%, #c9a84c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px; font-weight: 300;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.8; margin-bottom: 16px;
+  }
+  .highlight { color: #c9a84c; font-weight: 600; }
+  .details-box {
+    margin-top: 40px; padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 16px; text-align: left;
+  }
+  .detail-row {
+    display: flex; align-items: center;
+    gap: 16px; margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .detail-row:last-child { margin-bottom: 0; }
+  .detail-icon { font-size: 24px; width: 36px; text-align: center; }
+  .detail-label { font-weight: 300; color: rgba(255,255,255,0.5); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+  .detail-value { font-weight: 500; font-size: 15px; }
+  .footer {
+    margin-top: 50px; font-size: 12px;
+    font-weight: 300; color: rgba(255,255,255,0.3);
+    letter-spacing: 3px; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="gold-line"></div>
+  <div class="container">
+    <div class="brand">Konecta</div>
+    <div class="check">✅</div>
+    <h1>Registrazione Confermata!</h1>
+    <p>Grazie per esserti registrato all'evento<br>
+    <span class="highlight">"Mindset dei Campioni del Mondo"</span></p>
+    <p>Riceverai una email di conferma con tutti i dettagli.</p>
+    <div class="details-box">
+      <div class="detail-row">
+        <div class="detail-icon">🏆</div>
+        <div><div class="detail-label">Special Guest</div><div class="detail-value">Gianluca Zambrotta</div></div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-icon">📅</div>
+        <div><div class="detail-label">Data</div><div class="detail-value">Giovedì 5 Marzo 2026 · ore 19:00</div></div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-icon">📍</div>
+        <div><div class="detail-label">Location</div><div class="detail-value">Ristorante Ribot — San Siro, Milano</div></div>
+      </div>
+    </div>
+    <div class="footer">Un evento Konecta</div>
+  </div>
+</body>
+</html>
